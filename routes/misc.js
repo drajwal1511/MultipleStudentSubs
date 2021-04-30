@@ -45,6 +45,6 @@ routes.post("/substomultiplestu", (req, res) => {
             console.log(e);
         }
     })();
-    
+    res.render("home");
 });
 module.exports = routes;
