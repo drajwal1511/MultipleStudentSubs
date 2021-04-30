@@ -1,0 +1,19 @@
+<%- include("partials/header") %>
+    <main>
+        <h1>Home Page</h1>
+        <section>
+
+            <form action="/" method="POST">
+                <input type="file" id="fileUpload">
+                <input name="data" type="text" id="data" hidden>
+                <button type="button" id="upload">Upload</button>
+                <span id="tick" hidden>&#10003;</span>
+                <br>
+                <label for="custID">Enter Customer ID</label>
+                <input required name="custID" name="custID" placeholder="Enter Customer ID" type="number">
+                <br>
+                <button type="submit">Submit</button>
+            </form>
+        </section>
+    </main>
+    <%- include("partials/footer") %>
