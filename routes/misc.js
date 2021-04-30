@@ -3,6 +3,9 @@ const bcrypt = require("bcrypt");
 const routes = experss.Router();
 var Student = require("../models/student");
 var StudentPayment = require("../models/student_payment");
+routes.get("/",(req,res)=>{
+    res.render("landing");
+})
 routes.get("/substomultiplestu", (req, res) => {
     res.render("home");
 });
@@ -45,6 +48,6 @@ routes.post("/substomultiplestu", (req, res) => {
             console.log(e);
         }
     })();
-    res.render("home");
+    res.redirect("/");
 });
 module.exports = routes;
