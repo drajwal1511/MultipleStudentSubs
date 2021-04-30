@@ -14,6 +14,30 @@ StudentPayment.init({
     },
     session_id:{
         type:DataTypes.INTEGER,
+    },
+    purchase_razorpay_payment_id:{
+        type:DataTypes.STRING
+    },
+    purchase_razorpay_order_id:{
+        type:DataTypes.STRING
+    },
+    purchase_razorpay_payment_amount:{
+        type:DataTypes.STRING
+    },
+    purchase_razorpay_payment_date:{
+        type:DataTypes.STRING
+    },
+    purchase_razorpay_payment_time:{
+        type:DataTypes.STRING
+    },
+    purchase_razorpay_payment_email:{
+        type:DataTypes.STRING
+    },
+    purchase_razorpay_payment_contact:{
+        type:DataTypes.STRING
+    },
+    purchase_razorpay_payment_status:{
+        type:DataTypes.INTEGER
     }
 },{
     sequelize,

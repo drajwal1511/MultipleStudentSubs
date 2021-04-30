@@ -36,7 +36,15 @@ routes.post("/substomultiplestu", (req, res) => {
                         var paymentObj={
                             customer_id:d.customer_id,
                             student_id:d.student_id,
-                            session_id:parseInt(50-j)
+                            session_id:parseInt(50-j),
+                            purchase_razorpay_payment_id:'bulk add',
+                            purchase_razorpay_order_id:'buld add',
+                            purchase_razorpay_payment_amount:'buld add',
+                            purchase_razorpay_payment_date:'bulk add',
+                            purchase_razorpay_payment_time:'bulk add',
+                            purchase_razorpay_payment_email:'buld add',
+                            purchase_razorpay_payment_contact:'bulk add',
+                            purchase_razorpay_payment_status:1
                         };
                         const newpayment = await StudentPayment.create(paymentObj);
                         // console.log(newpayment);

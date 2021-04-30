@@ -24,6 +24,6 @@ const sequelize = require("./database");
 })();
 const miscRoutes = require("./routes/misc");
 app.use(miscRoutes);
-app.listen(3111,()=>{
-    console.log("server up at port 80");
+app.listen(3001,()=>{
+    console.log("server up at port 3001");
 })
