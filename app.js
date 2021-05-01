@@ -9,7 +9,7 @@ const sequelize = require("./database");
     try{
         await sequelize.authenticate();
         console.log("Connection to DB successful");
-    }catch (e){
+    }catch (e){ 
         console.log("Connection to Database failed");
         console.log(e);
     }
