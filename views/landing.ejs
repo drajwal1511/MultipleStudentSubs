@@ -4,5 +4,49 @@
         <section>
             <a href="/substomultiplestu">Upload Multiple Student</a>
         </section>
+        <section>
+            <% if(list.length!=0){ %>
+                <table>
+                    <thead>
+                        <tr>
+                            <th>
+                                First Name
+                            </th>
+                            <th>
+                                Last Name
+                            </th>
+                            <th>
+                                Email Id
+                            </th>
+                            <th>
+                                Phone Number
+                            </th>
+                            <th>
+                                Customer Id
+                            </th>
+                        </tr>
+                    </thead>
+                <% for(var i=0;i<list.length;i++){ %>
+                    <tr>
+                        <td>
+                            <%= list[i].student_first_name %> 
+                        </td>
+                        <td>
+                            <%= list[i].student_last_name %> 
+                        </td>
+                        <td>
+                            <%= list[i].student_email %> 
+                        </td>
+                        <td>
+                            <%= list[i].student_phone_number %> 
+                        </td>
+                        <td>
+                            <%= list[i].customer_id %> 
+                        </td>
+                    </tr>
+                <% } %>
+                </table>
+            <% } %>
+        </section>
     </main>
     <%- include("partials/footer") %>
