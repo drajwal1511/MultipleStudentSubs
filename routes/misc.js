@@ -9,7 +9,7 @@ routes.get("/landing",(req,res)=>{
 routes.get("/substomultiplestu", (req, res) => {
     res.render("home");
 });
-routes.post("/substomultiplestu", (req, res) => {
+routes.post("/landing", (req, res) => {
     req.body.data = JSON.parse(req.body.data);
     var custID = req.body.custID;
     var data = req.body.data;
